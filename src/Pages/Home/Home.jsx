@@ -6,8 +6,10 @@ export const Home = () => {
     return (
         <div className="home">
             <Sidebar />
-            <div className="homeContainer">Container</div>
-            {/* <Navbar /> */}
+            <div className="homeContainer">
+                <Navbar />
+                home container
+            </div>
         </div>
     )
 }
