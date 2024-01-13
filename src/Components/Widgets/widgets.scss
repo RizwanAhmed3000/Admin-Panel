@@ -7,6 +7,11 @@
     box-shadow: 5px 5px 10px #d9d9d9,
         -5px -5px 10px #ffffff;
     height: 100px;
+    transition: all 150ms ease;
+
+    &:hover{
+        transform: scale(1.02);
+    }
 
     .left,
     .right {
