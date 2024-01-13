@@ -4,4 +4,14 @@
     box-shadow: 5px 5px 10px #d9d9d9,
         -5px -5px 10px #ffffff;
     padding: 10px;
+
+    .title{
+        font-weight: 600;
+        color: gray;
+        margin-bottom: 20px;
+    }
+
+    .chartGrid{
+        stroke: lightgray;
+    }
 }
