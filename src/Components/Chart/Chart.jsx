@@ -2,7 +2,7 @@ import "./chart.scss"
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 
-export const Chart = () => {
+export const Chart = ({aspect, title}) => {
 
     const data = [
         { name: "January", Total: 1200 },
@@ -11,59 +11,14 @@ export const Chart = () => {
         { name: "April", Total: 1700 },
         { name: "May", Total: 800 },
         { name: "June", Total: 2500 },
-    ]
-
-    // const data = [
-    //     {
-    //         name: 'Page A',
-    //         uv: 4000,
-    //         pv: 2400,
-    //         amt: 2400,
-    //     },
-    //     {
-    //         name: 'Page B',
-    //         uv: 3000,
-    //         pv: 1398,
-    //         amt: 2210,
-    //     },
-    //     {
-    //         name: 'Page C',
-    //         uv: 2000,
-    //         pv: 9800,
-    //         amt: 2290,
-    //     },
-    //     {
-    //         name: 'Page D',
-    //         uv: 2780,
-    //         pv: 3908,
-    //         amt: 2000,
-    //     },
-    //     {
-    //         name: 'Page E',
-    //         uv: 1890,
-    //         pv: 4800,
-    //         amt: 2181,
-    //     },
-    //     {
-    //         name: 'Page F',
-    //         uv: 2390,
-    //         pv: 3800,
-    //         amt: 2500,
-    //     },
-    //     {
-    //         name: 'Page G',
-    //         uv: 3490,
-    //         pv: 4300,
-    //         amt: 2100,
-    //     },
-    // ];
+    ];
 
     return (
         <div className="chart">
             <div className="title">
-                Last 6 Months (Revenue)
+                {title}
             </div>
-            <ResponsiveContainer width="100%" aspect={2.3 / 1}>
+            <ResponsiveContainer width="100%" aspect={aspect}>
                 <AreaChart width={730} height={250} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
@@ -72,9 +27,8 @@ export const Chart = () => {
                             <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
                         </linearGradient>
                     </defs>
-                    <XAxis dataKey="name" stroke="gray"/>
-                    <YAxis stroke="gray" />
-                    <CartesianGrid strokeDasharray="3 3" className="chartGrid"/>
+                    <XAxis dataKey="name" stroke="gray" />
+                    <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
                     <Tooltip />
                     <Area type="monotone" dataKey="Total" stroke="#8884d8" fillOpacity={1} fill="url(#total)" />
                 </AreaChart>

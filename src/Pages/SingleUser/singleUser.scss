@@ -1,0 +1,90 @@
+.single {
+    display: flex;
+    width: 100%;
+
+    .singleContainer {
+        flex: 6;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+
+            .left {
+                flex: 1;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px #d9d9d9,
+                    -5px -5px 10px #ffffff;
+                padding: 20px;
+                position: relative;
+
+                .editBtn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    color: lightcoral;
+                    background-color: rgba(240, 128, 128, 0.24);
+                    font-size: 15px;
+                    cursor: pointer;
+                    border-radius: 0 5px 0 5px;
+                }
+
+                .item {
+                    display: flex;
+                    gap: 20px;
+
+                    .itemImg {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .details {
+                        .detailTitle {
+                            margin-bottom: 10px;
+                            color: #999;
+                        }
+
+                        .detailItem {
+                            margin-bottom: 10px;
+                            font-size: 14px;
+
+                            .itemKey {
+                                font-weight: bold;
+                                color: gray;
+                                margin-right: 5px;
+                            }
+
+                            .itemValue {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px #d9d9d9,
+                    -5px -5px 10px #ffffff;
+            }
+        }
+
+        .bottom {
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px #d9d9d9,
+                -5px -5px 10px #ffffff;
+            padding: 20px;
+            margin: 10px 20px;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+    }
+}
