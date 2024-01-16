@@ -4,7 +4,8 @@
     align-items: center;
     font-size: 14px;
     color: #555;
-    box-shadow: 1px 1px 5px 0px rgb(194 194 194 / 75%);
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    // box-shadow: 1px 1px 5px 0px rgb(194 194 194 / 75%);
 
     .wrapper {
         display: flex;
@@ -21,13 +22,13 @@
             padding: 5px 10px;
             width: 30%;
 
-            .searchIcon{
+            .searchIcon {
                 margin-left: 5px;
                 cursor: pointer;
                 color: lightcoral;
             }
 
-            input{
+            input {
                 width: 100%;
                 font-size: 14px;
                 border: none;
@@ -51,13 +52,13 @@
                 color: lightcoral;
                 position: relative;
 
-                .avatar{
+                .avatar {
                     width: 35px;
                     height: 35px;
                     border-radius: 50%;
                 }
 
-                .counter{
+                .counter {
                     width: 15px;
                     height: 15px;
                     background-color: rgb(52, 52, 52);

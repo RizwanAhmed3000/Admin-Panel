@@ -3,10 +3,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
-import NotificationsIcon from '@mui/icons-material/Notifications'; 
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble'; 
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import ListIcon from '@mui/icons-material/List';
+import { DarkModeContext } from "../../Context/darkModeContext";
+import { useContext } from "react";
 export const Navbar = () => {
+
+    const { dispatch } = useContext(DarkModeContext)
+
     return (
         <div className='navbar'>
             <div className="wrapper">
@@ -19,7 +24,7 @@ export const Navbar = () => {
                         <LanguageIcon />
                         English
                     </div>
-                    <div className="item">
+                    <div className="item" onClick={() => { dispatch({ type: "TOGGLE" }) }}>
                         <DarkModeIcon />
                     </div>
                     <div className="item">

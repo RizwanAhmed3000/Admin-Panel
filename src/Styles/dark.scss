@@ -1,0 +1,116 @@
+.app.dark {
+    background: #222;
+    color: rgb(156, 156, 156);
+
+    .chartGrid {
+        stroke: rgba(228, 228, 228, 0.219);
+    }
+
+    .table {
+        background-color: #222;
+
+        .tableCell {
+            color: gray;
+        }
+    }
+
+    .navbar {
+        border-color: #333;
+    }
+
+    .sidebar {
+        background-color: #222;
+        box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+
+        .top {
+            border-color: #333;
+        }
+
+        ul {
+            li {
+                &:hover {
+                    background-color: #333;
+                }
+            }
+        }
+    }
+
+    .widget {
+        box-shadow: 5px 5px 11px #1a1a1a,
+            -5px -5px 11px #2a2a2a;
+    }
+
+    .featured {
+        box-shadow: 5px 5px 11px #1a1a1a,
+            -5px -5px 11px #2a2a2a;
+    }
+
+    .chart {
+        box-shadow: 5px 5px 11px #1a1a1a,
+            -5px -5px 11px #2a2a2a;
+    }
+
+    .listContainer {
+        box-shadow: 5px 5px 11px #1a1a1a,
+            -5px -5px 11px #2a2a2a;
+    }
+
+    .datatable {
+        // color: gray;
+
+        .dataGrid {
+            color: gray;
+            border: none;
+
+            .viewBtn,
+            .deleteBtn {
+                color: gray;
+                border: none;
+            }
+
+            .cellWithStatus {
+                color: rgb(170, 170, 170);
+            }
+
+            .cellWithStatus.active {
+                background-color: rgba(0, 128, 0, 0.509);
+            }
+
+            .cellWithStatus.pending {
+                background-color: rgba(218, 165, 32, 0.509);
+            }
+
+            .cellWithStatus.passive {
+                background-color: rgba(220, 20, 60, 0.509);
+            }
+        }
+    }
+
+    .new .newContainer .top,
+    .new .newContainer .bottom {
+        box-shadow: 5px 5px 11px #1a1a1a,
+            -5px -5px 11px #2a2a2a;
+
+        input {
+            background-color: transparent;
+        }
+    }
+
+    .single {
+        .singleContainer {
+            .top {
+
+                .left,
+                .right {
+                    box-shadow: 5px 5px 11px #1a1a1a,
+                        -5px -5px 11px #2a2a2a;
+                }
+            }
+
+            .bottom {
+                box-shadow: 5px 5px 11px #1a1a1a,
+                    -5px -5px 11px #2a2a2a;
+            }
+        }
+    }
+}
