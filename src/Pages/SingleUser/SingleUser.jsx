@@ -39,7 +39,7 @@ export const SingleUser = () => {
                         </div>
                     </div>
                     <div className="right">
-                        <Chart aspect={4 / 1} title="User Spendings (last 6 months)" />
+                        <Chart aspect={3 / 1} title="User Spendings (last 6 months)" />
                     </div>
                 </div>
                 <div className="bottom">

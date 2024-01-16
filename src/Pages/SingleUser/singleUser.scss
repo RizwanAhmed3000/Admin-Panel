@@ -32,7 +32,7 @@
 
                 .item {
                     display: flex;
-                    gap: 20px;
+                    gap: 30px;
 
                     .itemImg {
                         width: 100px;
@@ -48,17 +48,19 @@
                         }
 
                         .detailItem {
-                            margin-bottom: 10px;
+                            margin-bottom: 20px;
                             font-size: 14px;
 
                             .itemKey {
                                 font-weight: bold;
                                 color: gray;
                                 margin-right: 5px;
+                                font-size: 15px;
                             }
 
                             .itemValue {
                                 font-weight: 300;
+                                font-size: 15px;
                             }
                         }
                     }
