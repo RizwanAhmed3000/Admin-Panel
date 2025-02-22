@@ -8,7 +8,8 @@ export const NewUser = ({ inputs, title }) => {
 
     const [file, setFile] = useState("")
 
-    console.log(file, "===>>>> file")
+    // console.log(file, "===>>>> file")
+    // console.log(title)
 
     return (
         <div className='new'>

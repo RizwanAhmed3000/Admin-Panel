@@ -75,3 +75,54 @@ export const productInputs = [
         placeholder: "in stock",
     },
 ];
+
+export const hotelsInputs = [
+    {
+        id: 1,
+        label: "Name",
+        type: "text",
+        placeholder: "Hotel Name",
+    },
+    {
+        id: 2,
+        label: "Property Type",
+        type: "text",
+        placeholder: "Property Type",
+    },
+    {
+        id: 3,
+        label: "City",
+        type: "text",
+        placeholder: "City",
+    },
+    {
+        id: 4,
+        label: "Address",
+        type: "text",
+        placeholder: "Address",
+    },
+    {
+        id: 5,
+        label: "Distance From City Center",
+        type: "text",
+        placeholder: "Distance From City Center",
+    },
+    {
+        id: 6,
+        label: "Description",
+        type: "text",
+        placeholder: "Description",
+    },
+    {
+        id: 7,
+        label: "Rating",
+        type: "text",
+        placeholder: "Rating",
+    },
+    {
+        id: 8,
+        label: "Price",
+        type: "text",
+        placeholder: "Chipest Price",
+    },
+];

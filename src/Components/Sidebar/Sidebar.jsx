@@ -12,10 +12,13 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../Context/darkModeContext";
 import { useContext } from "react";
+import { AuthContext } from "../../Context/AuthContext";
 
 export const Sidebar = () => {
 
     const { dispatch } = useContext(DarkModeContext)
+    const { user } = useContext(AuthContext)
+    console.log(user, "====>>> user")
 
     return (
         <div className='sidebar'>
@@ -35,26 +38,36 @@ export const Sidebar = () => {
                     </Link>
                     <p className="titles">LISTS</p>
 
-                    <Link to="/users" style={{ textDecoration: "none" }}>
+                    <Link to="/Customers" style={{ textDecoration: "none" }}>
                         <li>
                             <PersonIcon className="icons" />
-                            <span>Users</span>
+                            <span>Customers</span>
                         </li>
                     </Link>
-                    <Link to="/products" style={{ textDecoration: "none" }}>
+                    <Link to="/Rooms" style={{ textDecoration: "none" }}>
                         <li>
                             <InventoryIcon className="icons" />
-                            <span>Products</span>
+                            <span>Rooms</span>
                         </li>
                     </Link>
+                    {
+                        user.role === "admin" && (
+                            <Link to="/Hotels" style={{ textDecoration: "none" }}>
+                                <li>
+                                    <InventoryIcon className="icons" />
+                                    <span>Hotels</span>
+                                </li>
+                            </Link>
+                        )
+                    }
                     <li>
                         <CreditCardIcon className="icons" />
-                        <span>Orders</span>
+                        <span>Bookings</span>
                     </li>
-                    <li>
+                    {/* <li>
                         <LocalShippingIcon className="icons" />
                         <span>Delivery</span>
-                    </li>
+                    </li> */}
                     <p className="titles">SERVICE</p>
 
                     <li>

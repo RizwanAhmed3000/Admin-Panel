@@ -4,19 +4,35 @@ export const userColumn = [
         field: 'user', headerName: 'User', width: 230, renderCell: (params) => {
             return (
                 <div className="cellWithImg">
-                    <img src={params.row.img} className="cellImg" />
+                    <img src={params.row.img || `https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg`} className="cellImg" />
                     {params.row.username}
                 </div>
             )
         }
     },
     { field: 'email', headerName: 'Email', width: 230 },
-    { field: 'age', headerName: 'Age', width: 100 },
-    { field: 'status', headerName: 'Status', width: 160, renderCell: (params)=>{
-        return (
-            <div className={`cellWithStatus ${params.row.status}`}>{params.row.status}</div>
-        )
-    } },
+    { field: 'country', headerName: 'Country', width: 100 },
+    { field: 'city', headerName: 'City', width: 100 },
+    { field: 'phoneNumber', headerName: 'Phone', width: 150 },
+    { field: 'role', headerName: 'Role', width: 100 },
+]
+
+export const hotelsColumn = [
+    { field: 'id', headerName: 'ID', width: 70 },
+    {
+        field: 'hotel', headerName: 'Hotel', width: 230, renderCell: (params) => {
+            return (
+                <div className="cellWithImg">
+                    {params.row.name}
+                </div>
+            )
+        }
+    },
+    { field: 'city', headerName: 'City', width: 100 },
+    { field: 'address', headerName: 'Address', width: 230 },
+    { field: 'propertyType', headerName: 'Type', width: 150 },
+    { field: 'rating', headerName: 'Ratings', width: 100 },
+    { field: 'chipestPrice', headerName: 'Price', width: 150 },
 ]
 
 export const userRows = [
